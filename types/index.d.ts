@@ -14,14 +14,16 @@ interface Resume {
   feedback: Feedback;
 }
 
+type TipATS = {
+  type: "good" | "improve";
+  tip: string;
+};
+
 interface Feedback {
   overallScore: number;
   ATS: {
     score: number;
-    tips: {
-      type: "good" | "improve";
-      tip: string;
-    }[];
+    tips: TipATS[];
   };
   toneAndStyle: {
     score: number;
