@@ -4,8 +4,6 @@ interface IProps {
 }
 
 const ATS = (props: IProps) => {
-  console.log(props);
-
   const gradientClass =
     props.score > 69
       ? "from-green-100"

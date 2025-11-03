@@ -50,8 +50,6 @@ const Resume = () => {
       const imageUrl = URL.createObjectURL(imageBlob);
       setImageUrl(imageUrl);
 
-      console.log(data.feedback);
-
       setFeedback(data.feedback);
     };
 
